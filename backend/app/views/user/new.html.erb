@@ -1,9 +1,10 @@
-<h1> Hello nouvel utilisateur !</h1>
+<h1> Hello toi !</h1>
+<p> Il est temps de créer ton profil. Remplis ton username et ta bio :</p>
 <form action='/new' method='post'> 
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
     Username <br>
     <input type="string" name='username'><br>
     Bio <br>
-    <input type='text' name='bio'>
-    <input type="submit" value="good job"> 
+    <textarea name="bio" rows="10" cols="30">Type your sweet bio Bro !</textarea><br>
+    <input type="submit" value="Allez là !"> 
 </form>
