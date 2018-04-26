@@ -1,0 +1,9 @@
+<h1> Hello nouvel utilisateur !</h1>
+<form action='/new' method='post'> 
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    Username <br>
+    <input type="string" name='username'><br>
+    Bio <br>
+    <input type='text' name='bio'>
+    <input type="submit" value="good job"> 
+</form>
